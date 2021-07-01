@@ -1,28 +1,32 @@
-const express =require('express');
+const express = require('express'); //requiero el paquete express
 
-//genero una aplicacion express
-const app =express();
+//genero una aplicacion express 
+const app = express()
+//endpoint
+const{RouterIndex} = require('./routes/index')
 
-//Routes
-const { RouterIndex }=require('./routes/index');
-
-app.use("/", RouterIndex)
-//app.use("/user", RouterIndex)
-//app.use("/user/data", RouterIndex)
-//app.use(RouterIndex)
-
+app.use("/", RouterIndex);
+//app.use("/user", RouterIndex);
+//app.use("/user/data", RouterIndex);
+//app.use(RouterIndex);cd 
 /*
-"/"+ "/" ="//" =>"/"
-"/"+"/saludo"=>"//saludo"=>"/saludo"
-"/"+"/saludo/:nombre"="//saludo/:nombre"=>"/saludo/:nombre"
+"/" + "/" = "//" => "/"
+"/" + "/saludo" = "//saludo" => "/saludo"
+"/" + "/saludo/:nombre" = "//saludo/:nombre" => "/saludo/:nombre"
 
-"/user"+"/"="/user"
-
-"/user"+"/saludo"="/user/saludo"
-"/user/data"+"/saludo"="/user/data/saludo"
-
+"/user" + "/saludo" = "/user/saludo"
+"/user/data" + "/saludo" = "/user/data/saludo" 
 */
 
-app.listen(3000,()=>{
-    console.log("Servidor escuchando en http://localhost:3000 ");
-});
+app.listen(3000, () => {
+    console.log("Servidor escuchando en http://localhost:3000")
+})
+
+
+
+
+
+
+
+
+
