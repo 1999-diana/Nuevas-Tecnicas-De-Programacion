@@ -1,0 +1,22 @@
+{
+  "name": "servidor-web",
+  "version": "1.0.0",
+  "description": "Uso de NPM",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "keywords": [
+    "practica",
+    "ntp"
+  ],
+  "author": "Jordan C.",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.17.1",
+    "joi": "17.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.7"
+  }
+}
